@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
     while (gpioRead(ECHO) == 1)
         stop = time_time();
 
-    measure = ((stop-start) *34300.0)/2.0;
+    measure = (stop-start) *17150.0;
 
     fprintf(stdout, "Measure: %lf\n", measure);
 

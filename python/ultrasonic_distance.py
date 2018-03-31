@@ -30,7 +30,6 @@ while GPIO.input(ECHO_PIN) == 1:
     end = time.time()
 
 # calculate result
-elapsed = end - start
-measure = elapsed * 17150
+measure = (end - start) * 17150.0
 
 print (measure)
